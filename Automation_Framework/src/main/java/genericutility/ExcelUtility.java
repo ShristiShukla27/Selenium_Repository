@@ -24,7 +24,7 @@ public class ExcelUtility {
 	public String getStringFromExcelFile(String sheetName, int rowIndex, int colIndex) throws EncryptedDocumentException, IOException {
 		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getStringCellValue();
+		 wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getStringCellValue();
 	}
 	/**
 	 * This method will read Number data from Excel file and return value to the caller
